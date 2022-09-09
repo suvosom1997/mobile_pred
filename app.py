@@ -8,14 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import sklearn
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import plot_confusion_matrix
-from sklearn.metrics import classification_report,confusion_matrix
+
 
 app = Flask(__name__)
 model= pickle.load(open('model.pkl','rb'))
