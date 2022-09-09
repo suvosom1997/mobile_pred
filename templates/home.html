@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html >
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>ML API</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+
+
+  
+
+<body>
+
+ <div class="login">
+
+	<h1>MOBILE PRICE PREDICTION</h1>
+
+<p>
+Hey ! Hope you are doing good. This is my first web application. It predicts whether the price of your mobile comes under the following categories based on your inputs:
+
+<ul>
+  <li>0 = regular</li>
+  <li>1 = affordable</li>
+  <li>2 = costly</li>
+  <li>3 = Very costly</li>
+
+</ul>  
+
+This is a Machine Learning prediction based application that makes use of Python as the programming language, Flask as the application, Heroku as the cloud service platform and finally our good old HTML for the webpage. I understand you need to fill a lot of details, and a simple integer based output may seem a low return of your invested time, but I still urge you to judiciously provide the required details, so that you can understand the inbuilt simple but fascinating Artificial Intelligence that actually goes into it..
+</p>
+
+<p><strong>As the supported inputs are Numeric only, please use 0 for 'No' and 1 for 'Yes'</strong></p>
+
+
+<p>
+
+</p>
+
+
+</br>
+
+<div>
+<form action="/result" method="POST">
+
+<label for="battery_power">Battery Power (min:501 max:1998)    :</label> <input id="battery_power" name="battery_power" type="text" /><br />
+
+<label for="blue">Has Bluetooth ? Yes(1) or No(0)    :</label> <input id="blue" name="blue" type="text" /><br />
+
+<label for="clock_speed">Clockspeed (GHz) (min:0.5 max:3)    :</label> <input id="clock_speed" name="clock_speed" type="text" /><br />
+
+<label for="dual_sim">Has Dual Sim ? Yes(1) or No(0)    :</label> <input id="dual_sim" name="dual_sim" type="text" /><br />
+
+<label for="fc">Front Camera Megapixel (min:0 max:19)    :</label> <input id="fc" name="fc" type="text" /><br />
+
+<label for="four_g">Has 4G connectivity ? Yes(1) or No(0)    :</label> <input id="four_g" name="four_g" type="text" /><br />
+
+<label for="int_memory">Internal Memory (GB) (min:2 max:64)    :</label> <input id="int_memory" name="int_memory" type="text" /><br />
+
+<label for="m_dep">Mobile Depth(cm) (min:0.1 max:1)    :</label> <input id="m_dep" name="m_dep" type="text" /><br />
+
+<label for="mobile_wt">Mobile Weight(g) (min:80 max:200)    :</label> <input id="mobile_wt" name="mobile_wt" type="text" /><br />
+
+<label for="n_cores">Number of cores (1/2/3/4/5/6/7/8)    :</label> <input id="n_cores" name="n_cores" type="text" /><br />
+
+<label for="pc">Back Camera Megapixel (min:0 max:20)   :</label> <input id="pc" name="pc" type="text" /><br />
+
+<label for="px_height">Pixel Height (min:0 max:1960)   :</label> <input id="px_height" name="px_height" type="text" /><br />
+
+<label for="px_width">Pixel Width (min:500 max:1998)   :</label> <input id="px_width" name="px_width" type="text" /><br />
+
+<label for="ram">RAM capacity (MB) Width (min:256 max:3998)   :</label> <input id="ram" name="ram" type="text" /><br />
+
+<label for="sc_h">Screen Height (cm) (min:5 max:19)   :</label> <input id="sc_h" name="sc_h" type="text" /><br />
+
+<label for="sc_w">Screen Width (cm) (min:0 max:18)   :</label> <input id="sc_w" name="sc_w" type="text" /><br />
+
+<label for="talk_time">Talktime in hours (min:2 max:20)   :</label> <input id="talk_time" name="talk_time" type="text" /><br />
+
+<label for="three_g">Has 3G compatibility ? Yes(1) or No(0)    :</label> <input id="three_g" name="three_g" type="text" /><br />
+
+<label for="touch_screen">Has touchscreen ? Yes(1) or No(0)    :</label> <input id="touch_screen" name="touch_screen" type="text" /><br />
+
+<label for="four_g">Has WIFI connectivity ? Yes(1) or No(0)    :</label> <input id="touch_screen" name="touch_screen" type="text" /><br />
+<br />
+<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+
+</form>
+
+
+
+   <br>
+
+   <br>
+
+  
+
+   
+
+ </div>
+
+ {{prediction_text}}
+
+
+
+</body>
+
+</html>
+
